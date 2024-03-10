@@ -7,3 +7,17 @@
 ```bash
 pip install -r requirements.txt
 ```
+#### ENABLE/DISABLE LaTeX RENDERING
+```python
+plt.style.use('default')
+plt.rc('text', usetex=True) # Turn False if LaTeX is not installed
+plt.rc('font', family='sans-serif')
+plt.rc('font', size=14)
+plt.rc('axes', titlesize=14)
+plt.rc('axes', labelsize=14)
+plt.rc('xtick', labelsize=12)
+plt.rc('ytick', labelsize=12)
+plt.rc('legend', fontsize=14)
+plt.rc('lines', markersize=10)
+plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
+```
