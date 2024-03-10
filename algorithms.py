@@ -180,8 +180,8 @@ class LBFGSOptimizer(Optimizer):
         self.memory_size = memory_size
         self.c = c
         self.theta = theta
-        self.sk_memory = []  # History of s_k vectors
-        self.yk_memory = []  # History of y_k vectors (gradient differences)
+        self.sk_memory = []
+        self.yk_memory = []
 
     def _update_memory(self, sk, yk):
         if self.memory_size > 0:
@@ -208,7 +208,7 @@ class LBFGSOptimizer(Optimizer):
                 alphas.insert(0, alpha)
                 q = q - alpha * yk
 
-            z = q  # Initial Hessian approximation
+            z = q
 
             for i in range(len(self.sk_memory)):
                 sk = self.sk_memory[i]
