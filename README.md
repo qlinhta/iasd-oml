@@ -21,3 +21,10 @@ plt.rc('legend', fontsize=14)
 plt.rc('lines', markersize=10)
 plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
 ```
+#### CONTENTS
+1. algorithms.py
+2. instance.py
+3. regpb.py
+4. notebook.ipybn
+5. OML.pdf
+6. README.md
